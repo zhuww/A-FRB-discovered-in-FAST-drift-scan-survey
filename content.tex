@@ -123,7 +123,7 @@ Note that we kept 3 significant digits for $z$ and DM$_{\rm IGM}$ to show the ex
 
 To quantify the uncertainties on the
 above $z$ estimate, we now step through the relevant contributions.
-We note that the estimated DM$_{\rm Gal}$ has $\sim$50\% uncertainty \citet{ymw16}, DM$_{\rm host}$ may contain $\sim $100\% uncertainty, together they contribute 5\% relative uncertainty to the estimated DM$_{\rm IGM}$.
+We note that the estimated DM$_{\rm Gal}$ has $\sim$50\% uncertainty \citep{ymw16}, DM$_{\rm host}$ may contain $\sim $100\% uncertainty, together they contribute 5\% relative uncertainty to the estimated DM$_{\rm IGM}$.
 Furthermore, due to inhomogeneity in the IGM, objects from the same DM$_{\rm IGM}$ could be from different $z$ \citep{plm+19}, according to \citet{wmb18}, this could increase the uncertainty in our estimated $z$ by an additional factor of 10\%.
 In the above derivations, we assumed probable distributions of DM$_{\rm Gal}$ and DM$_{\rm host}$, but we could still underestimate them substantially and thus overestimate DM$_{\rm IGM}$ and $z$. 
 Therefore, we treat the FRB's derived redshift, luminosity, and energy as upper limits.
@@ -146,7 +146,13 @@ These values are comparable to those derived in Table 1 of \citet{zhang18} from 
 \includegraphics[scale=0.7]{DM_struct.eps} \\ 
 %\showthe\columnwidth
 \caption{\label{fig:DMcurve} 
-{\bf Similar to the Figure 2 of \citet{hessels19}, the left panel shows the square of the Gaussian-smoothed forward difference time derivative of the dedispersed burst profile as a function of DM and time. The profiles are down sampled by a factor of 2 to boost the S/N. The right panel show the sum along the time axis and its Gaussian fit. The bestfit DM from this fine-structure analysis is $1812\pm1$~pc~cm$^{-3}$, consistent with the estimate from the S/N of P1 (Table \ref{tab:par}.}
+{\bf Similar to the Figure 2 of \citet{hessels19}, the left panel shows the
+square of the Gaussian-smoothed forward difference time derivative of the
+dedispersed burst profile as a function of DM and time. The profiles are
+down sampled by a factor of 2 to boost the S/N. The right panel show the
+sum along the time axis and its Gaussian fit. The bestfit DM from this
+fine-structure analysis is $1812\pm1$~pc~cm$^{-3}$, consistent with the
+estimate from the S/N of P1 (Table \ref{tab:par}).}
 }
 \end{figure} 
 
@@ -214,7 +220,7 @@ Considering that our search system does not have a 100\% recall rate, no upper b
 Due to small number statistics, the lower limit of $k > 0.034 $ event per 1000 hour is not yet constraining to most theoretical predictions \citep{lhz+17, lllz18, lml+20}. 
 
 Nevertheless, this first detection attests to FAST's potential to systematically detect FRBs in the future, and such detections will put far more stringent constraints on the FRB-rate at high DM.
-\citet{lor18,zhang18} showed that the FAST event rate, especially the rate of high-DM FRBs, would help determine the luminosity function of FRBs.
+\citet{lor18} and \citet{zhang18} showed that the FAST event rate, especially the rate of high-DM FRBs, would help determine the luminosity function of FRBs.
 Detection of very high DM ($> 6500$ pc~cm$^{-3}$) could probe FRB at more than $z=10$ \citep{zhang18}, and help shed light on the cosmological distribution of the FRBs.
 
 \section{Discussion and Summary}
@@ -243,18 +249,22 @@ which can be translated to an all-sky rate of $>9\times10^2$ day$^{-1}$. }
 
 {\bf 
 If FRB~181123 is a one-off FRB, not a repeater, the implications of this first discovery can be discussed in connection with the event rate density, specifically with the event rate densities of one-off FRB models based on compact object merging events. 
-Equation (10) in \citet{zhang18} shows how the fluence ($F_{\mu}\simpropto  S_{\mu}\tau_{\rm obs}$) of a putative FRB scales with redshift: \begin{equation}
+Equation (10) in \citet{zhang18} shows how the fluence ($F_{\mu}\simeq  S_{\mu}\tau_{\rm obs}$) of a putative FRB scales with redshift: \begin{equation}
     F_{z'} = \left(\frac{1+z'}{1+z}\right)^{1+\alpha}\left(\frac{D_{\rm L}}{D_{\rm L}'}\right)^2F_{z},
 \end{equation} 
 where $D_{\rm L}$ and $D_{\rm L}'$ denote the luminosity distances corresponding to redshift $z$ and $z'$, and $\alpha$ is the spectra index of the FRB.
-Following this equation, we find that our FRB~181123 could be still detected at 0.025~Jy~ms level at a redshift of $z\simeq4.25$. 
+Following this equation, we find that a FRB like FRB~181123 could be detected with
+0.025~Jy~ms fluence at a redshift of $z\simeq4.25$. 
 For the value of $\alpha$ we used the observed spectral index of P1.
 The resulting redshift corresponds to a comoving volume of 1800~Gpc$^3$. 
 So far, we made a single detection of a FRB event above $10^{40}$~erg in energy in a volume of 1800~Gpc$^3$. 
 For the total amount of data we searched, we could infer the 95\% confidence lower limit event rate of 900 per day, and an event rate density lower limit of $>200$~Gpc$^{-3}$yr$^{-1}$ for FRBs with energy $>10^{40}$~erg. 
 This should be a fraction of the FRBs because some (maybe most) FRB events have a lower isotropic energy than $10^{40}$~erg. If FRBs are beamed, some (likely most) events do not beam towards us. 
 This lower limit is already in mild tension with the black hole-black hole (BH-BH) merger event rate density ($\sim 200$~Gpc$^{-3}$yr$^{-1}$) inferred from LIGO observations \citep{mg18}. More detections may be made in the same dataset we used and the true event rate density may be better constrained to a much higher value than our limit. 
-The continued search of FRBs in FAST drift scan survey could lead to good constraints on the true FRB event rate density \citep{lml+20} and put other compact object merging models, such as neutron star-neutron star merger model (event rate density $\sim 2\times10^3$~Gpc$^{-3}$~yr$^{-1}$; \citet{aaa+17}) to test \citep[see also][]{wang20}.
+The continued search of FRBs in FAST drift scan survey could lead to good
+constraints on the true FRB event rate density \citep{lml+20} and put other
+compact object merging models, such as neutron star-neutron star merger model
+(event rate density $\sim 2\times10^3$~Gpc$^{-3}$~yr$^{-1}$; \citealt{aaa+17}) to test \citep[see also][]{wang20}.
 %For an in-depth comparison of observed FRB luminosity functions and FRB models, please refer to \citet{lml+20}. 
 %As pointed out by  \citet{phl19}, it is important to note that the above FRB rate is an observed one only, and does not account for the possibility that many FRBs that might not beam towards the earth. Given the importance of beaming when interpreting radio pulsar progenitors \citep[see, e.g.,][]{kk08},we encourage the community to consider an FRB beaming fraction when both modeling possible sources and interpreting FRB observations.
 
