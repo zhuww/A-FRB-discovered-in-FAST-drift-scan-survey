@@ -1,0 +1,143 @@
+\ProvidesPackage{mypack}
+
+
+%define some commands so that fonts/spacings are correct
+
+\newcommand{\tento}[1]{\ensuremath{\times 10^{#1}}}
+\newcommand{\rmsub}[1]{\ensuremath{_{\mathrm{#1}}}}
+
+%regardless of mode
+
+%units
+\newcommand{\Ang}{\textrm{\AA}} %Angstrom
+\newcommand{\nm}{\textrm{nm}} %nanometer
+\newcommand{\um}{\ensuremath{\mathrm{\mu m}}} %micron
+\newcommand{\mm}{\textrm{mm}} %millimeter
+\newcommand{\cm}{\textrm{cm}} %centimeter
+\newcommand{\m}{\textrm{m}} %meter
+\newcommand{\km}{\textrm{km}} %kilometer
+\newcommand{\AU}{\textrm{AU}} %astronomical unit
+\newcommand{\ltyr}{\textrm{lt-yr}} %light-year
+\newcommand{\pc}{\textrm{pc}} %parsec
+\newcommand{\kpc}{\textrm{kpc}} %kiloparsec
+\newcommand{\Mpc}{\textrm{Mpc}} %megaparsec
+\newcommand{\Rsun}{\ensuremath{\mathrm{R_{\Sun}}}} %solar radius
+\newcommand{\Rearth}{\ensuremath{\mathrm{R_{\Earth}}}} %Earth radius
+\newcommand{\amu}{\textrm{amu}} %atomic mass units
+\newcommand{\mg}{\textrm{mg}} %milligrams
+\newcommand{\gm}{\textrm{gm}} %grams
+\newcommand{\kg}{\textrm{kg}} %kilograms
+\newcommand{\K}{\textrm{K}} %Kelvin
+\newcommand{\Msun}{\ensuremath{\mathrm{M_{\Sun}}}} % solar mass
+\newcommand{\Mearth}{\ensuremath{\mathrm{M_{\Earth}}}} %Earth mass
+\newcommand{\ns}{\textrm{ns}} %nanosecond
+\newcommand{\us}{\ensuremath\mathrm{\mu s}} %microsecond
+\newcommand{\ms}{\textrm{ms}} %millisecond
+\newcommand{\s}{\textrm{s}} %second
+\newcommand{\mnt}{\textrm{min}} %minute
+\newcommand{\hr}{\textrm{hr}} %hour
+%\newcommand{\day}{\textrm{d}} %day
+\newcommand{\yr}{\textrm{yr}} %year
+\newcommand{\Myr}{\textrm{Myr}} %megayear
+\newcommand{\Gyr}{\textrm{Gyr}} %gigayear
+\newcommand{\ps}{\ensuremath{\mathrm{s^{-1}}}} %per second
+\newcommand{\pmnt}{\ensuremath{\mathrm{min^{-1}}}} %per minute
+\newcommand{\pday}{\ensuremath{\mathrm{d^{-1}}}} %per day
+\newcommand{\pyr}{\ensuremath{\mathrm{yr^{-1}}}} %per year
+\newcommand{\pMyr}{\ensuremath{\mathrm{Myr^{-1}}}} %per megayear
+\newcommand{\Hz}{\textrm{Hz}} %hertz
+\newcommand{\kHz}{\textrm{kHz}} %kilohertz
+\newcommand{\MHz}{\textrm{MHz}} %megahertz
+\newcommand{\GHz}{\textrm{GHz}} %gigahertz
+\newcommand{\cmsq}{\ensuremath{\mathrm{cm^2}}} %square cm
+\newcommand{\msq}{\ensuremath{\mathrm{m^2}}} %square meter
+\newcommand{\kpcsq}{\ensuremath{\mathrm{kpc^2}}} %square kpc
+\newcommand{\cmcub}{\ensuremath{\mathrm{cm^3}}} %cubic cm
+\newcommand{\mcub}{\ensuremath{\mathrm{m^3}}} %cubic meter
+\newcommand{\pcmsq}{\ensuremath{\mathrm{cm^{-2}}}} %per square cm
+\newcommand{\pmsq}{\ensuremath{\mathrm{m^{-2}}}} %per square meter
+\newcommand{\pkpcsq}{\ensuremath{\mathrm{kpc^{-2}}}} %per square kpc
+\newcommand{\pcmcub}{\ensuremath{\mathrm{cm^{-3}}}} %per cubic cm
+\newcommand{\pmcub}{\ensuremath{\mathrm{m^{-3}}}} %per cubic meter
+\newcommand{\pcubpc}{\ensuremath{\mathrm{pc^{-3}}}} % per cubic parsec
+\newcommand{\pssq}{\ensuremath{\mathrm{s^{-2}}}} % per square second
+\newcommand{\kelvin}{\textrm{K}} %kelvin
+\newcommand{\eV}{\textrm{eV}} %electron volt
+\newcommand{\keV}{\textrm{keV}} %electron volt
+\newcommand{\MeV}{\textrm{keV}} %electron volt
+\newcommand{\erg}{\textrm{erg}} %erg
+\newcommand{\joule}{\textrm{J}} %Joule
+\newcommand{\Lsun}{\ensuremath{\mathrm{L_{\Sun}}}} %solar luminosity
+\newcommand{\uJy}{\ensuremath{\mathrm{\mu Jy}}} %microjanksy
+\newcommand{\mJy}{\textrm{mJy}} %millijanksy
+\newcommand{\Jy}{\textrm{Jy}} %jansky
+\newcommand{\coul}{\textrm{coul}} %coulomb
+\newcommand{\volt}{\textrm{V}} %volt
+\newcommand{\amp}{\textrm{A}} %ampere
+\newcommand{\tesla}{\textrm{T}} %tesla
+\newcommand{\gauss}{\textrm{G}} %gauss
+\newcommand{\Zsun}{\ensuremath{\mathrm{Z_{\Sun}}}} %solar metallicity
+\newcommand{\dmu}{\ensuremath{\mathrm{pc\; cm^{-3}}}}
+\newcommand{\DM}{\textrm{DM}} %dispersion measure
+%physical constants
+\newcommand{\clt}{{\it c}} %speed of light
+\newcommand{\Gc}{{\it G_c}} %gravitational constant
+\newcommand{\kb}{\ensuremath{k_B}} %boltzman constant
+\newcommand{\hp}{{\it h}} %planck constant
+\newcommand{\sigsb}{\ensuremath{\sigma_{SB}}} %steffan-boltzman constant
+\newcommand{\mpr}{\ensuremath{m_p}} %proton mass
+\newcommand{\me}{\ensuremath{m_e}} %electron mass
+\newcommand{\mH}{\ensuremath{m_H}} %Hydrogren mass
+\newcommand{\anot}{\ensuremath{a_0}} %Bohr radius
+\newcommand{\Rdb}{\ensuremath{R_{db}}} %Rydberg constant
+\newcommand{\kC}{\ensuremath{k_C}} %Coulomb constant
+\newcommand{\epsnot}{\ensuremath{\epsilon_0}} %permitivity of free space
+\newcommand{\munot}{\ensuremath{\mu_0}} %permeability of free space
+%quantities
+\newcommand{\radius}{{\it r}} %radius
+\newcommand{\diam}{{\it d}} %diamter
+\newcommand{\dist}{{\it D}} %distance
+\newcommand{\leng}{\ensuremath{\ell}} %length
+\newcommand{\wavelen}{\ensuremath{\lambda}}
+\newcommand{\area}{{\it A}} %area
+\newcommand{\vol}{{\it V}} %volume
+\newcommand{\mass}{{\it m}} %mass
+\newcommand{\num}{{\it N}} %number
+\newcommand{\sigm}{\ensuremath{\sigma_m}} %surface mass density
+\newcommand{\sigN}{\ensuremath{\sigma_N}} %surface number density
+\newcommand{\sigL}{\ensuremath{\sigma_L}} %surface luminosity density
+\newcommand{\rhom}{\ensuremath{\rho_m}} %mass density
+\newcommand{\rhoN}{\ensuremath{\rho_N}} %number density
+\newcommand{\rhoE}{\ensuremath{\rho_E}} %energy density
+\newcommand{\rhoL}{\ensuremath{\rho_L}} %luminosity density
+\newcommand{\colden}{\ensuremath{N_{col}}} %column density
+\newcommand{\tim}{{\it t}} %time
+\newcommand{\period}{{\it P}} %period
+\newcommand{\angfreq}{\ensuremath{\omega}} %angular frequency
+\newcommand{\freq}{\ensuremath{\nu}} %frequency
+\newcommand{\vel}{{\it v}} %velocity
+\newcommand{\accel}{{\it a}} %acceleration
+\newcommand{\force}{{\it F}} %force
+\newcommand{\pressure}{\ensuremath{\mathcal{P}}} %pressure
+\newcommand{\prad}{\ensuremath{\mathcal{P}_{rad}}} %radiation pressure
+\newcommand{\pgas}{\ensuremath{\mathcal{P}_{gas}}} %gas pressure
+\newcommand{\mom}{{\it p}} %momentum
+\newcommand{\energy}{{\it E}} %energy
+\newcommand{\KE}{{\it KE}} %kinetic energy
+\newcommand{\PE}{{\it PE}} %potential energy
+\newcommand{\torque}{\ensuremath{\mathcal{T}}}
+\newcommand{\power}{\ensuremath{\dot{E}}} %power
+\newcommand{\lum}{{\it L}} %luminosity
+\newcommand{\eflux}{\ensuremath{\Phi_E}} %energy flux
+\newcommand{\nflux}{\ensuremath{\Phi_N}} %number flux
+\newcommand{\temp}{{\it T}} %temperature
+\newcommand{\charge}{\ensuremath{\mathcal{Q}}} %charge
+\newcommand{\efield}{\ensuremath{\mathcal{E}}} %electric field
+\newcommand{\epoten}{\ensuremath{\mathcal{V}}} %electric potential (voltage)
+\newcommand{\current}{\ensuremath{\mathcal{I}}} %current
+\newcommand{\resist}{\ensuremath{\mathcal{R}}} %resistance
+\newcommand{\capac}{\ensuremath{\mathcal{C}}} %capacitance
+\newcommand{\induct}{\ensuremath{\mathcal{L}}} %inductance
+\newcommand{\bfield}{\ensuremath{\mathcal{B}}} %magnetic field
+\newcommand{\dm}{\textrm{DM}} %dispersion measure
+\newcommand{\sn}{\textrm{S/N}} %signal-to-noise ratio

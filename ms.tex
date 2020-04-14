@@ -1,0 +1,271 @@
+%% --------------------------------------------------------
+%\documentclass[preprint2]{aastex}
+%\documentclass[12pt,preprint]{aastex} 
+%\documentclass[iop,apj,tighten]{emulateapj} 
+
+%\documentclass{emulateapj}
+%\usepackage{apjfonts}
+%\usepackage{lineno} 
+%\usepackage{natbib}
+%\usepackage{epsf}
+%\usepackage{url}
+%\usepackage{color}
+%\usepackage{mathrsfs, amsmath}
+%\usepackage[plainpages=false, colorlinks=true, anchorcolor=blue, linkcolor=blue, citecolor=blue, bookmarks=false]{hyperref}
+%\citestyle{apj}
+\documentclass[iop,apj,numberedappendix,appendixfloats]{emulateapj}
+
+\usepackage{natbib}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{multirow}
+
+\usepackage{ulem}
+
+
+
+%\documentclass[twocolumn]{aastex62}
+%\documentclass{aastex62}
+%\documentclass[twocolumn]{aastex}
+
+%\documentclass[preprint]{aastex}
+\usepackage[plainpages=false, colorlinks=true, anchorcolor=blue, linkcolor=blue, citecolor=blue, bookmarks=false]{hyperref}
+%\usepackage{amsmath,amstext}
+%\usepackage[T1]{fontenc}
+%\usepackage{apjfonts} 
+%\usepackage[figure,figure*]{hypcap}
+%\usepackage{mypack}
+%\usepackage{graphicx}
+%\usepackage{verbatim}
+\usepackage{ulem}
+
+
+
+ 
+%\citestyle{aa}
+
+%% --------------------------------------------------------
+\newcommand{\tc}[2]{\textcolor{#1}{#2}}
+\newcommand{\cWZ}[1]{\textcolor{red}{\bf #1}}
+\newcommand{\chat}[1]{\textcolor{red}{\bf \sout {#1}}}
+%\newcommand{\Msun}{\ifmmode\mbox{M}_{\odot}\else$\mbox{M}_{\odot}$\fi}
+%\newcommand{\Rsun}{\ifmmode\mbox{R}_{\odot}\else$\mbox{R}_{\odot}$\fi}
+%\newcommand{\Mearth}{\ifmmode\mbox{M}_{\oplus}\else$\mbox{M}_{\oplus}$\fi}
+%\newcommand{\Rearth}{\ifmmode\mbox{R}_{\oplus}\else$\mbox{R}_{\oplus}$\fi}
+%\newcommand{\msR}{\mathscr{R}}
+%\newcommand{\msC}{\mathcal{C}}
+%\newcommand{\msD}{\mathcal{D}}
+%\newcommand{\msN}{\mathcal{N}}
+%\newcommand{\msS}{\mathcal{S}}
+%\newcommand{\msJ}{\mathcal{J}}
+%\newcommand{\msU}{\mathcal{U}}
+%\newcommand{\msG}{\mathcal{G}}
+%\newcommand{\msF}{\mathcal{F}}
+\def\bfref{\color{red}}
+%\def\bfref{}
+\def\B{\color{blue}}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\newcommand{\bb}{\begin{bmatrix}}
+\newcommand{\eb}{\end{bmatrix}}
+
+
+%\newcommand{\Mark}{\bf \textcolor{r}}
+%\newcommand{\chandra}{\textit{Chandra}\,}
+%\newcommand{\spitzer}{\textit{Spitzer}\,}
+%%\newcommand{\xmm}{\textit{XMM-Newton}\,}
+%\newcommand{\xmm}{\textit{XMM}\,}
+%\newcommand{\xte}{\textit{RXTE}\,}
+%\newcommand{\rosat}{\textit{ROSAT}\,}
+%\newcommand{\ooft}{4U~0142$+$61\,}
+%\newcommand{\seven}{RXS~J170849.0$-$400910\,}
+%\newcommand{\eight}{1E~1841$-$045\,}
+%\newcommand{\etff}{AX~1845$-$0258}
+%\newcommand{\etfs}{PSR~J1846$-$0258}
+%\newcommand{\ttfn}{1E~2259$+$586}
+%\newcommand{\tfe}{1E~1048.1$-$5937\,}
+%\newcommand{\etten}{XTE~J1810$-$197\,}
+%\newcommand{\ninet}{SGR~1900$+$14}
+%\newcommand{\etos}{SGR~1806$-$20\,}
+%\newcommand{\ntst}{PSR~B1916$+$14\,}
+%\newcommand{\stet}{PSR~J1718$-$3718\,}
+
+\shorttitle{A FRB discovered by FAST}
+\shortauthors{Zhu et al.}
+
+
+%% --------------------------------------------------------
+%% \slugcomment{Submitted to ApJ}
+%% --------------------------------------------------------
+\begin{document}
+%% --------------------------------------------------------
+
+\title{A Fast Radio Burst discovered in FAST drift scan survey}
+
+%% --------------------------------------------------------
+\author{
+Weiwei Zhu\altaffilmark{1,7}{*},
+Di Li\altaffilmark{1,4}{*},
+Rui Luo\altaffilmark{3},
+Chenchen Miao\altaffilmark{2,6},
+Bing Zhang\altaffilmark{5},
+Laura Spitler\altaffilmark{7},
+Duncan Lorimer\altaffilmark{8,9},
+Michael Kramer\altaffilmark{7},
+David Champion\altaffilmark{7},
+Youling Yue\altaffilmark{4},
+Andrew Cameron\altaffilmark{3},
+Marilyn Cruces\altaffilmark{7},
+Ran Duan\altaffilmark{6},
+Yi Feng\altaffilmark{2,6,3},
+Jun Han\altaffilmark{6,13},
+George Hobbs\altaffilmark{3},
+Chenhui Niu\altaffilmark{1},
+Jiarui Niu\altaffilmark{2,6},
+Zhichen Pan\altaffilmark{4},
+Lei Qian\altaffilmark{4},
+Dai Shi\altaffilmark{3},
+Ningyu Tang\altaffilmark{4},
+Pei Wang\altaffilmark{1},
+Hongfeng Wang\altaffilmark{10,2,11,12},
+Mao Yuan\altaffilmark{2,6},
+Lei Zhang\altaffilmark{2,6,3},
+Xinxin Zhang\altaffilmark{6},
+% Belong in FAST TEAM
+Shuyun Cao\altaffilmark{4},
+Li Feng\altaffilmark{4},
+Hengqian Gan\altaffilmark{4},
+Long Gao\altaffilmark{4},
+Xuedong Gu\altaffilmark{4},
+Minglei Guo\altaffilmark{4},
+Qiaoli Hao\altaffilmark{4},
+Lin Huang\altaffilmark{4},
+Menglin Huang\altaffilmark{4},
+Peng Jiang\altaffilmark{4},
+Chengjin Jin\altaffilmark{4},
+Hui Li\altaffilmark{4},
+Qi Li\altaffilmark{4},
+Qisheng Li\altaffilmark{4},
+Hongfei Liu\altaffilmark{4},
+Gaofeng Pan\altaffilmark{4},
+Bo Peng\altaffilmark{4},
+Hui Qian\altaffilmark{4},
+Xiangwei Shi\altaffilmark{4}, 
+Jinyuo Song\altaffilmark{4},
+Liqiang Song\altaffilmark{4},
+Caihong Sun\altaffilmark{4},
+Jinghai Sun\altaffilmark{4},
+Hong Wang\altaffilmark{4},
+Qiming Wang\altaffilmark{4},
+Yi Wang\altaffilmark{4},
+Xiaoyao Xie\altaffilmark{4},
+Jun Yan\altaffilmark{4},
+Li Yang\altaffilmark{4},
+Shimo Yang\altaffilmark{4},
+Rui Yao\altaffilmark{4},
+Dongjun Yu\altaffilmark{4},
+Jinglong  Yu\altaffilmark{4},
+Chengmin Zhang\altaffilmark{4},
+Haiyan Zhang\altaffilmark{4},
+Shuxin Zhang\altaffilmark{4},
+Xiaonian Zheng\altaffilmark{4},
+Aiying Zhou\altaffilmark{4},
+Boqin Zhu\altaffilmark{4},
+Lichun Zhu\altaffilmark{4},
+Ming Zhu\altaffilmark{4},
+Wenbai Zhu\altaffilmark{4},
+Yan Zhu\altaffilmark{4}
+}
+%% --------------------------------------------------------
+%% \email{}
+%% --------------------------------------------------------
+%\altaffiltext{1}{\footnotesize CAS Key Laboratory of FAST, NAOC, Chinese Academy of Sciences,
+%Beijing 100101, China; {\it zhuww@nao.cas.cn;}; {\it dili@nao.cas.cn;}}
+
+\affil{
+$^1$ CAS Key Laboratory of FAST, NAOC, Chinese Academy of Sciences,
+Beijing 100101, China;\\
+$^2$ University of Chinese Academy of Sciences, Beijing 100049, China\\
+$^3$ CSIRO Astronomy and Space Science, PO Box 76, Epping, NSW 1710, Australia\\
+$^4$ FAST Collaboration, CAS Key Laboratory of FAST, NAOC, Chinese Academy of Sciences, Beijing 100101, China\\
+$^5$ Department of Physics and Astronomy, University of Nevada, Las Vegas, Las Vegas, NV 89154, USA\\
+$^6$ National Astronomical Observatories, Chinese Academy of Sciences, Beijing 100012, China\\
+$^7$ Max-Planck-Institut für Radioastronomie, Auf dem Hügel 69, D-53121 Bonn, Germany\\
+$^8$ Department of Physics and Astronomy, West Virginia University, P.O. Box 6315, Morgantown, WV
+26506, USA\\
+$^9$ Center for Gravitational Waves and Cosmology, Chestnut Ridge Research Building, Morgantown, WV
+26505, USA\\
+$^{10}$ Image Processing and Pattern Recognition Laboratory, School of Artificial Intelligence, Beijing Normal University,
+Beijing 100875, China; \\
+$^{11}$ School of Information Management, Dezhou University, Dezhou 253023, China;\\
+$^{12}$ Institute for Astronomical Science, Dezhou University, Dezhou 253023, China;\\
+$^{13}$ National Astronomical Data Center, Beijing 100101, China;\\
+}
+
+%\correspondingauthor{Zhu, W. W.}
+\email{{*}Email: zhuww@nao.cas.cn;dili@nao.cas.cn}
+
+%% --------------------------------------------------------
+%\begin{abstract}
+%\end{abstract}
+
+
+%% --------------------------------------------------------
+\keywords{pulsars: individual (\object{FRB181123}) --- Radio: stars --- stars: neutron
+--- Binaries:general --- gravitation -- relativity}
+
+%% --------------------------------------------------------
+%% A small citation guide:
+%% \citep{jon90} (Jones et al. 1990) [no comma] 
+%% \cite(t){jon90} Jones et al. (1990) [no comma]
+%%
+%% \citep*{jon90} (Jones, Baker, and Williams 1990) [one arg, no comma]
+%% \citet*{jon90} Jones, Baker, and Williams (1990) [one arg]
+%%
+%% \citealp(jon90) Jones et al. 1990  [no comma]
+%% \citealt{jon90} Jones et al. 1990  [no comma, been using this]
+%%
+%% \citealp*{jon90} Jones, Baker, and Williams 1990 [all and no comma,this]
+%% \citealt*{jon90} Jones, Baker, and Williams 1990 [all and no comma]
+%% --------------------------------------------------------
+
+
+\input{content.tex}
+
+
+
+\acknowledgements
+The authors thank Shu-Xu Yi, Nan Li, and Zhi-Yuan Ren for discussions and the referee for a careful review and suggestions.
+This work is supported by National Key R\&D Program of China No.
+2017YFA0402600 and the CAS-MPG LEGACY project. 
+WWZ is supported by the CAS Pioneer Hundred Talents
+Program, the Strategic Priority Research Program of the CAS Grant No. XDB23000000, and by the National Natural Science Foundation
+of China under grant No. 11690024, 11743002, 11873067. 
+LQ is supported in part by the Youth Innovation Promotion Association of CAS
+(id.~2018075).
+YLY is supported by CAS "Light of West China" Program.
+ZCP is supported by the National Natural Science Funds of China (Grant No.
+11703047) and the CAS "Light of West China" Program.
+DRL is supported by National Science Foundation OIA Award 1458952.
+This research made use of Astropy,\footnote{http://www.astropy.org} a community-developed core Python package for Astronomy \citep{astropy:2013, astropy:2018}. 
+This work is supported by Chinese Virtual Observatory (China-VO) and Astronomical Big Data Joint Research Center, co-founded by National Astronomical Observatories, Chinese Academy of Sciences and Alibaba Cloud.
+{\it Facilities:}
+\facility{Five-hundred-meter  Aperture  Spherical  radio  Telescope  (FAST)}
+
+\software{PRESTO \citep{2011ascl.soft07017R}}
+\software{PyWavelet \citep{pywavelet}}
+\software{Astropy \citep{astropy:2018}}
+
+%\bibliographystyle{astroads}
+\bibliographystyle{aasjournal.bst}
+%\bibliography{myrefs,journals1,modrefs,psrrefs,crossrefs}
+\bibliography{myrefs}
+
+
+\end{document}
+
+
+
