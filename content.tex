@@ -2,7 +2,7 @@
 \begin{abstract}
 We report the discovery of a highly dispersed fast radio burst, FRB~181123, from an analysis of $\sim$1500~hr of drift-scan survey data taken using the Five-hundred-meter Aperture Spherical radio Telescope (FAST). The pulse has three distinct emission components, which vary with frequency across our 1.0--1.5~GHz observing band. We measure the peak flux density to be $>0.065$~Jy and the corresponding fluence $>0.2$~Jy~ms. Based on the observed dispersion measure of 1812~cm$^{-3}$~pc, we infer a redshift of $\sim 1.9$. From this, we estimate the peak luminosity and
 isotropic energy to be $\lesssim 2\times10^{43}$~erg~s$^{-1}$ and  $\lesssim 2\times10^{40}$~erg, respectively. With only one FRB from the survey detected so far, our constraints on the event rate are limited. We derive a 95\% confidence lower limit for the event rate of 900 FRBs per day for FRBs with fluences $>0.025$~Jy~ms. 
-{\bf We performed follow-up observations of the source with FAST for four hours and have not found a repeated burst. We discuss the implications of this discovery for our understanding of the physical mechanisms of FRBs.}
+We performed follow-up observations of the source with FAST for four hours and have not found a repeated burst. We discuss the implications of this discovery for our understanding of the physical mechanisms of FRBs.
 %It is not currently known whether this FRB repeats or not. Further observations are strongly encouraged.
 \end{abstract}
 
@@ -82,14 +82,14 @@ Using the radiometer equation to convert our data to a Jansky scale, we measure 
 FRB 181123's flux and multi-peak pulse profile resemble those from some previously discovered FRBs \citep{cpk+16}.
 In particular, the two smaller peaks P2, P3, show narrow band features that resemble the down-drift pattern seen in the repeating bursts of FRB~121102 (\citealt{gsp+18, hessels19}; Li et al. in prep.). 
 
-{\bf \citet{hessels19} presented a detailed analysis of the complex time-frequency structures seen in the repeating bursts of FRB~121102. We followed their approach and estimated the drift rate between FRB~181123's P2 and P3 to be $\lesssim-140$~MHz~ms$^{-1}$ (Figure \ref{fig:dedisp}, right panel) in the observer's frame and $\lesssim-400$~MHz~ms$^{-1}$ in the rest frame of the FRB; the estimated drift rate has significant uncertainty, and it could be underestimated because we only see part of the spectrum of P2 and P3. 
+ \citet{hessels19} presented a detailed analysis of the complex time-frequency structures seen in the repeating bursts of FRB~121102. We followed their approach and estimated the drift rate between FRB~181123's P2 and P3 to be $\lesssim-140$~MHz~ms$^{-1}$ (Figure \ref{fig:dedisp}, right panel) in the observer's frame and $\lesssim-400$~MHz~ms$^{-1}$ in the rest frame of the FRB; the estimated drift rate has significant uncertainty, and it could be underestimated because we only see part of the spectrum of P2 and P3. 
 Nevertheless, our estimated drift rate of $\lesssim-400$~MHz~ms$^{-1}$ fits well to the range measured in FRB 121102 \citet{hessels19}) around the rest frame emission frequency of 3--4.4~GHz, enhancing the similarities between FRB~181123 and FRB~121102.
 
 Figure \ref{fig:DMcurve} shows the results of a fine frequency-time structure analysis applied to FRB~181123, following the approach in \citet{hessels19}. We found significant fine structures, characterized by the square of Gaussian-smoothed forward-difference time derivatives (i.e. the changes between every consecutive time bins), in the dedispersed bursts around the position of P1 and minor structures in P2 and P3. These fine structures allow us to derive the optimal DM as 1812$\pm$1~pc~cm$^{-3}$. This estimation is consistent with, and slightly more constrained than, what we we derived from using the S/N.
 Unlike \citet{gsp+18} and \citet{hessels19}, we did not observe FRB~181123 in a coherent-dedispersion mode, thus the intra-channel smearing due to a DM of $\sim1812$ is 0.5~ms to 2~ms in our observing band. Hence,
 DM smearing will not allow us to resolve structure finer than 0.5~ms despite our 0.196608~ms sampling interval.
 The measured widths of P1, P2, and P3 are consistent with this DM-smearing width and show no significant evidence of scattering tails. 
-}
+
 
 
 As can be seen in the frequency structure plot in Figure ~\ref{fig:dedisp}, P1 of FRB~181123 is brighter at the lower frequency part of the band. From P1's on-pulse minus off-pulse spectrum shown in the middle panel of Figure ~\ref{fig:dedisp}, we find that the best-fit FRB spectrum index is $-3.3\pm0.5$. \citet{sch+14} detected the first burst of FRB~121102 in the sidelobe of the Arecibo beam. They argue that the sidelobe position varied with frequency and caused the detected burst spectrum to be steep and up-swinging (with spectral index 7--11). The same argument could be applied conversely to FRB~181123, in which case the FRB is likely detected by the main beam instead of the sidelobe. In contrast to the original observation of FRB~121102 \citep{sch+14}, FRB~181123 is detected in a drift scan where the beam was moving across the sky while the burst arrived, further changing the observed burst spectral index. 
@@ -138,7 +138,7 @@ These values are comparable to those derived in Table 1 of \citet{zhang18} from 
 \includegraphics[scale=0.7]{dedisp_new.eps} \\ 
 %\showthe\columnwidth
 \caption{\label{fig:dedisp} 
-{\bf Left-Top panel}: The summed pulse profile from the dedispersed pulse, showing two smaller peaks following closely after the main pulse. The red, green, and blue dotted lines show the best Gaussian-fit to the three peaks. The best-fit parameters are listed in Table \ref{tab:par}. {\bf Left panel}: The dedispersed pulse plot showing clear multi-peak structures. The straightness of the pulse indicates a good fit to the $\nu^{-2}$ dispersion law. The horizontal white strips are the results of channels being cleared due to RFI contamination. {\bf Center panel}: The spectrum of FRB 181123 (on-pulse mean spectrum minus the off-pulse mean spectrum for the main peak P1). Here we only take the on-pulse part (24 spectral samples) of P1 for the on-pulse spectrum. We take 400 spectral samples to form the average off-pulse spectrum, 200 on the left of the P1 pulse, and 200 on the right of the P3 pulse.The gray shadow indicates the uncertainty of the on-off spectrum estimated from the root mean squares of the on- and  off-pulse spectra. {\bf Right panel:} {\bf The zoomed dynamic spectrum of P2 and P3 smoothed with a Gaussian filter. We fit the two peaks with 2D Gaussian functions to estimate the frequency drift rate between the two peaks. The white line connects the centers of the two best-fit Gaussian functions.} {\bf Right-Top panel:} {\bf A zoomed view of the pulse profiles of P2 and P3.}}
+{\bf Left-Top panel}: The summed pulse profile from the dedispersed pulse, showing two smaller peaks following closely after the main pulse. The red, green, and blue dotted lines show the best Gaussian-fit to the three peaks. The best-fit parameters are listed in Table \ref{tab:par}. {\bf Left panel}: The dedispersed pulse plot showing clear multi-peak structures. The straightness of the pulse indicates a good fit to the $\nu^{-2}$ dispersion law. The horizontal white strips are the results of channels being cleared due to RFI contamination. {\bf Center panel}: The spectrum of FRB 181123 (on-pulse mean spectrum minus the off-pulse mean spectrum for the main peak P1). Here we only take the on-pulse part (24 spectral samples) of P1 for the on-pulse spectrum. We take 400 spectral samples to form the average off-pulse spectrum, 200 on the left of the P1 pulse, and 200 on the right of the P3 pulse.The gray shadow indicates the uncertainty of the on-off spectrum estimated from the root mean squares of the on- and  off-pulse spectra. {\bf Right panel:} The zoomed dynamic spectrum of P2 and P3 smoothed with a Gaussian filter. We fit the two peaks with 2D Gaussian functions to estimate the frequency drift rate between the two peaks. The white line connects the centers of the two best-fit Gaussian functions. {\bf Right-Top panel:} A zoomed view of the pulse profiles of P2 and P3.}
 \end{figure*} 
 
 \begin{figure}%[!ht]
@@ -146,7 +146,7 @@ These values are comparable to those derived in Table 1 of \citet{zhang18} from 
 \includegraphics[scale=0.7]{DM_struct.eps} \\ 
 %\showthe\columnwidth
 \caption{\label{fig:DMcurve} 
-{\bf Similar to the Figure 2 of \citet{hessels19}, the left panel shows the
+{Similar to the Figure 2 of \citet{hessels19}, the left panel shows the
 square of the Gaussian-smoothed forward difference time derivative of the
 dedispersed burst profile as a function of DM and time. The profiles are
 down sampled by a factor of 2 to boost the S/N. The right panel show the
@@ -226,29 +226,29 @@ Detection of very high DM ($> 6500$ pc~cm$^{-3}$) could probe FRB at more than $
 \section{Discussion and Summary}
 
 FRB~181123 shows a clear multi-peak profile. Its two smaller peaks, P2 ($5.7\pm0.2$~ms from P1), and P3 ($3.9\pm0.2$~ms from P2) show narrow band features that resemble the down-drifting pattern seen in the bursts of repeating FRB~121102 \citep{gsp+18,hessels19}, 181128, 181222 and 181226 \citep{chime_8}. 
-{\bf Although multiple sub-bursts and fine pulse structures have also been observed from (so far) non-repeating FRBs \citep{cpk+16,ffb+18,cms+20}, the combination of multiple sub-bursts (or components) with millisecond spacing
+Although multiple sub-bursts and fine pulse structures have also been observed from (so far) non-repeating FRBs \citep{cpk+16,ffb+18,cms+20}, the combination of multiple sub-bursts (or components) with millisecond spacing
 and down-drifting pattern have mostly been seen from repeating FRBs. This suggests that FRB~181123 could be a repeating FRB source. To test this, we conducted follow-up observations toward the position of the FRB using FAST. So far, we observed the position during for four independent sessions each with one-hour integration on 2020 February 2, 28, and 29 and 2020 March 27. We have not detected any repeating bursts above the fluence level 0.012~Jy~ms (7$\sigma$ limit; we used 8-bit digitization and two polarization in the follow-up observations, thus reached a lower detection threshold than in the original 1-bit data).  
 %have so-far only been observed from repeating FRBs. 
 %These interesting features warrant further investigation. 
-The non-detection of repeating bursts from FRB~181123 may be due to one of the following four reasons \citep[e.g.][]{palaniswamy18}: 1. The waiting times for producing repeating bursts may be longer than the duration of our follow up; 2. Faint repeating bursts may be produced in our observing window, but are below the detection threshold. This requires that the peak fluxes of the putative repeating bursts are lower than that of FRB~181123 by a factor of more than six\footnote{A similar case has been observed in FRB 171019 \citep{kumar19}, whose repeating bursts are much fainter than the originally detected burst.}; 3. The burst activity may be intermittent (e.g. changing due to unidentified periodic activity) like in FRB 121102, and our follow up observations may be taken when the source is not active; 4. The source is an intrinsically non-repeating FRB. It is possible that either of the first three reasons are at play. We plan to continue monitoring the FRB in the coming months and hopefully will eventually detect some burst if the FRB is a repeater.
+The non-detection of repeating bursts from FRB~181123 may be due to one of the following four reasons \citep[e.g.][]{palaniswamy18}: 1. The waiting times for producing repeating bursts may be longer than the duration of our follow up; 2. Faint repeating bursts may be produced in our observing window, but are below the detection threshold. This requires that the peak fluxes of the putative repeating bursts are lower than that of FRB~181123 by a factor of more than six\footnote{A similar case has been observed in FRB 171019 \citep{kumar19}, whose repeating bursts are much fainter than the originally detected burst.}; 3. The burst activity may be intermittent (e.g. changing due to unidentified periodic activity) like in FRB 121102, and our follow up observations may be taken when the source is not active; 4. The source is an intrinsically non-repeating FRB. It is possible that either of the first three reasons are at play. We plan to continue monitoring the FRB in the coming months and hopefully will eventually detect some bursts if the FRB is a repeater.
 
 
 The last possibility is difficult to prove, but if true, a catastrophic event has to be able to produce multiple peaks during the emission process. This is challenging for most models, even though in some scenarios this may be possible. For example, the ``blitzar'' model \citep{fr14} suggests that an FRB could originate from the final flash of a supermassive neutron star collapsing into a black hole by magnetic braking. Detailed simulations \citep{most18} showed that this scenario can produce a series of sub-ms pulses whose amplitudes decay exponentially with time. The observed duration of the sub-pulses of FRB 181123, when corrected for the redshift factor, may be consistent with this model. The down-drifting feature seen in sub-pulses may be understood within the generic bunching curvature radiation model invoking open field lines \citep{wang19}, which is invoked in the blitzar model during the magnetospheric ejection phase \citep{most18}. 
-}
+
 
 
 %Based on the previous FRB event rate from multiple telescopes, 
 FAST's sensitivity makes it one of the most effective telescope at detecting FRBs from high redshift, therefore its FRB detection rate is an important observable. 
 \citet{lhz+17} predicted that the FRB detection rate for the FAST 19-beam would be $5\pm2$ detections per 1000 hours, based on an all-sky event rate of $3\times10^4$ day$^{-1}$ that crosses an energy threshold of 0.03~Jy~ms.
 From a different approach, by measuring the event rate density of the luminosity function presented in \citet{lllz18}, \citet{lml+20} predicted an all-sky event rate of $10^4$--$10^5$~day$^{-1}$ for events with flux higher than 5~mJy, which correspond to 1.5--15 events per 1000 hours given the field of view of the FAST 19-beam.
-{\bf With one detection of FRB 181123, we 
+With one detection of FRB 181123, we 
 %cannot yet rule out the projected predictions. The 
 can place a lower bound of $0.034$ event per 1000 hour,
 %inferred from the detection of FRB 181123 
-which can be translated to an all-sky rate of $>9\times10^2$ day$^{-1}$. }
+which can be translated to an all-sky rate of $>9\times10^2$ day$^{-1}$. 
 
-{\bf 
-If FRB~181123 is a one-off FRB, not a repeater, the implications of this first discovery can be discussed in connection with the event rate density, specifically with the event rate densities of one-off FRB models based on compact object merging events. 
+
+If FRB~181123 is a one-off FRB, not a repeater, it may be possible that at least some energetic FRBs may form a distinct category from the repeaters. Then one may use this event to estimate the event rate density of these energetic events and compare it with some models predicting one-off FRBs, e.g. those models invoking compact star mergers.
 Equation (10) in \citet{zhang18} shows how the fluence ($F_{\nu}\simeq  S_{\nu}\tau_{\rm obs}$) of a putative FRB scales with redshift: \begin{equation}
     F_{z'} = \left(\frac{1+z'}{1+z}\right)^{1+\alpha}\left(\frac{D_{\rm L}}{D_{\rm L}'}\right)^2F_{z},
 \end{equation} 
@@ -257,18 +257,17 @@ Following this equation, we find that a FRB like FRB~181123 could be detected wi
 0.025~Jy~ms fluence at a redshift of $z\simeq4.25$. 
 For the value of $\alpha$ we used the observed spectral index of P1.
 The resulting redshift corresponds to a comoving volume of 1800~Gpc$^3$. 
-So far, we made a single detection of a FRB event above $10^{40}$~erg in energy in a volume of 1800~Gpc$^3$. 
+So far, we have made a single detection of an FRB event above $10^{40}$~erg in energy in a volume of 1800~Gpc$^3$. 
 For the total amount of data we searched, we could infer the 95\% confidence lower limit event rate of 900 per day, and an event rate density lower limit of $>200$~Gpc$^{-3}$yr$^{-1}$ for FRBs with energy $>10^{40}$~erg. 
-This should be a fraction of the FRBs because some (maybe most) FRB events have a lower isotropic energy than $10^{40}$~erg. If FRBs are beamed, some (likely most) events do not beam towards us. 
-This lower limit is already in mild tension with the black hole-black hole (BH-BH) merger event rate density ($\sim 200$~Gpc$^{-3}$yr$^{-1}$) inferred from LIGO observations \citep{mg18}. More detections may be made in the same dataset we used and the true event rate density may be better constrained to a much higher value than our limit. 
-The continued search of FRBs in FAST drift scan survey could lead to good
-constraints on the true FRB event rate density \citep{lml+20} and put other
-compact-object-merger FRB models, such as neutron star-neutron star merger model
-(event rate density $\sim 2\times10^3$~Gpc$^{-3}$~yr$^{-1}$; \citealt{aaa+17}) to test \citep[see also][]{wang20}.
+{\bf This lower limit is underestimated because we can only observe a fraction of the FRBs, some (maybe most) FRB events have a lower isotropic energy than $10^{40}$~erg, some FRBs may be beamed and likely not beaming towards us. 
+Interestingly, this lower limit is already in mild tension with the black hole-black hole (BH-BH) merger event rate density ($\sim 200$~Gpc$^{-3}$yr$^{-1}$) inferred from LIGO observations \citep{mg18} (regardless whether BH-BH mergers can make FRBs), but could be consistent with neutron star - neutron star (NS-NS) merger event rate density ($\sim 1.5\times10^3$~Gpc$^{-3}$~yr$^{-1}$; \citealt{aaa+17}).  More detections may be made in the same dataset we used and the true event rate density may be better constrained to a (much) higher value than our limit. This could lead to better constraints on the event rate density of energetic events \citep{lml+20}, giving tighter constraints on the consistency with the compact star merger models \citep[see also][]{wang20}. 
+}
+
+%The continued search of FRBs in FAST drift scan survey could lead to good constraints on the true FRB event rate density for energetic events \citep{lml+20} and put other compact-object-merger FRB models, such as neutron star-neutron star merger model (event rate density $\sim 2\times10^3$~Gpc$^{-3}$~yr$^{-1}$; \citealt{aaa+17}) to test \citep[see also][]{wang20}.
 %For an in-depth comparison of observed FRB luminosity functions and FRB models, please refer to \citet{lml+20}. 
 %As pointed out by  \citet{phl19}, it is important to note that the above FRB rate is an observed one only, and does not account for the possibility that many FRBs that might not beam towards the earth. Given the importance of beaming when interpreting radio pulsar progenitors \citep[see, e.g.,][]{kk08},we encourage the community to consider an FRB beaming fraction when both modeling possible sources and interpreting FRB observations.
 
-}
+
 
 
 
